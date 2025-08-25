@@ -186,3 +186,12 @@ print("The Output for a polynomial that has the number -1 is:", (3 * Assignneg1 
 Assignneg3 = float(-3)
 print("The Output for a polynomial that has the number -3 is:", (3 * Assignneg3 ** 3 - 2 * Assignneg3 ** 2 + 3 * Assignneg3 -1))
 
+# Some thought Quiz Explainations
+test1 = 6
+test2 = 3
+test1 /= 2 * test2 #This is read as: test1 = test1 / 2 * 3, test1 right now is stored as 6. so now its 6 / 2 * 3.
+# test1 = test1 / (2 * test2) #if i were to write this down: 6 would be on the top, 2*3 on the bottom, thus getting 1.
+# remember operator precedence (had to search this one up). both division and multiplication are on the same tier.
+# basically making it now just a LEFT to RIGHT when its being read.
+# special note? right side gets solved first -> 2 * 3 = 6 then divided.
+print(test1)
