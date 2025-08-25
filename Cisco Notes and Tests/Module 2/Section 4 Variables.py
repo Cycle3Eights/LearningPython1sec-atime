@@ -169,7 +169,7 @@ print("The Output for the quadratic Polynomial is:", float(ThreetoPower3 - Twoto
 # 3 ** 3 = 27, 2 ** 2 = 4, 3 * 1 = 3, -> 27 - 4 = 23 + 3 = 26 - 1 = 25 FOR ABOVE
 # 1 ** 3 = 1 * 3 = 3, 1 ** 2 = 1 * 2 = 2, 3 * 1 = 3,-> 3 - 2 = 1 + 3 = 4 - 1 = 3 FOR BELOW.
 
-## Going off of 3x^2, ABOVE: Multiplies using the Stored Variable, so it's read as 3x3x3 = 27, while
+## Going off of 3x^3, ABOVE: Multiplies using the Stored Variable, so it's read as 3x3x3 = 27, while
 ## BELOW: Multiples Exponents first, so 1x1x1 THEN * 3 -> coefficient = 3
 
 print("Now try getting the output for the polynomial while using these numbers: 0, 1, -1, -3")
