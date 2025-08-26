@@ -52,7 +52,7 @@ print(steakloving * 5) # Usual Format -> String and a Integer and it will copynp
 print(" " * 3 + "/" + " " + "\\")
 print(" " * 2 + "/" +" " * 3 + "\\"  + "\n /" + " " * 5 + "\\" )
 print("/" + "_" * 7 + "\\")
-# Small, in order to bypass the left side slash, cause that can be used with different other commands,
+# Small note, in order to bypass the left side slash, cause that can be used with different other commands,
 # put a double \\ instead.
 
 
