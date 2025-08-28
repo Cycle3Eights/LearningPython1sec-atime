@@ -55,4 +55,10 @@ print("/" + "_" * 7 + "\\")
 # Small note, in order to bypass the left side slash, cause that can be used with different other commands,
 # put a double \\ instead.
 
+# LAB Simple Input and Output
+# Evaluate results of the given arithmetic operations
+
+# LAB Operators and Expressions
+# That is one division type looking problem that probably has an actual name. But it's 1/x+1/x+1/x+1/x+1/x+1, which probably
+# would look better written down on paper or shown on website
 
