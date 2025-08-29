@@ -56,9 +56,54 @@ print("/" + "_" * 7 + "\\")
 # put a double \\ instead.
 
 # LAB Simple Input and Output
-# Evaluate results of the given arithmetic operations
+# Evaluate results of the given arithmetic operations -> Addition, Subtraction, Multiplication, Division.
+
+# Float Value for two variables.
+# I think I would need to use function or something to make it so result yields ERROR, if
+# one of the variables are used to divide by 0.
+#variableA = float(input("Enter a number between 1 to 100!"))
+#variableB = float(input("Enter a 2nd number between 1 to 100!"))
+
+#Prints in string quotations form, this only works with the String Operator: +.
+#IF W/O String Operator, then use comma's instead.
+# print("When adding both variables, the result is: " + str(variableA + variableB))
+# print("Subtracting both variables yields a result of: " + str(variableA - variableB))
+# print("Multiplying both variables gives: " + str(variableA * variableB))
+# print("Dividing both variables gives: " + str(variableA / variableB))
+
+## Turns out python will actually just stop me anyway if there's an input of 0: "ZeroDivisionError"
 
 # LAB Operators and Expressions
 # That is one division type looking problem that probably has an actual name. But it's 1/x+1/x+1/x+1/x+1/x+1, which probably
 # would look better written down on paper or shown on website
 
+# Keep in mind of the order of operators + hierarchy.
+
+# I could technically just instead of using input statement, just use variable assignment + print instead.
+#InputinX = float(input("It's division testing time, please input any number here: "))
+#Yresult = 1/(InputinX + 1/(InputinX + 1/(InputinX + 1/InputinX)))
+# print("Wacky Division should result: ", Yresult)
+
+# LAB Operators and Expressions - 2
+# Code and Evaluate end time based on the given input.
+
+hours = int(input("Enter a number based on a specific hour: ")) #Hours -> 0 to 23.
+minutes = int(input("Enter a number based on a specific minute: ")) #Minutes -> 0 to 59
+duration = int(input("How long will this event last? Please give a specific amount of minutes: "))
+#endtime = hours
+
+# print("An event will start at: " + str(hours) + ":" + str(minutes) + " and will last for: " + str(duration) + " minutes.")
+# print("Which means that this event should end at:", str(endtime))
+
+#figuring out information for time
+# 1440 minutes = 24 hours.
+# try converting it into TOTAL minutes then convert it back into hours + minutes.
+hour2minute = hours * 60
+totalminutes2hours = minutes + hour2minute
+durationaddedonminutes = totalminutes2hours + duration # total minutes
+conversiontotal = int(durationaddedonminutes / 60)
+conversiontoremainder = durationaddedonminutes % 60
+
+print(totalminutes2hours, "total amount of minutes after duration is", durationaddedonminutes)
+print("conversion test", conversiontotal, conversiontoremainder)
+print("This event should be ending at:" + str(conversiontotal) + ":" + str(conversiontoremainder))
