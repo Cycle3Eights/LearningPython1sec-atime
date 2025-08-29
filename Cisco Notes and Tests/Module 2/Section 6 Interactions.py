@@ -87,23 +87,35 @@ print("/" + "_" * 7 + "\\")
 # LAB Operators and Expressions - 2
 # Code and Evaluate end time based on the given input.
 
+#Input user numbers here
 hours = int(input("Enter a number based on a specific hour: ")) #Hours -> 0 to 23.
 minutes = int(input("Enter a number based on a specific minute: ")) #Minutes -> 0 to 59
 duration = int(input("How long will this event last? Please give a specific amount of minutes: "))
-#endtime = hours
 
-# print("An event will start at: " + str(hours) + ":" + str(minutes) + " and will last for: " + str(duration) + " minutes.")
-# print("Which means that this event should end at:", str(endtime))
-
-#figuring out information for time
-# 1440 minutes = 24 hours.
-# try converting it into TOTAL minutes then convert it back into hours + minutes.
+#Time Conversion for all minutes and hours
 hour2minute = hours * 60
 totalminutes2hours = minutes + hour2minute
 durationaddedonminutes = totalminutes2hours + duration # total minutes
 conversiontotal = int(durationaddedonminutes / 60)
 conversiontoremainder = durationaddedonminutes % 60
+conversiontohours = int((durationaddedonminutes % 1440) / 60)
 
-print(totalminutes2hours, "total amount of minutes after duration is", durationaddedonminutes)
-print("conversion test", conversiontotal, conversiontoremainder)
-print("This event should be ending at:" + str(conversiontotal) + ":" + str(conversiontoremainder))
+print("An event will start at: " + str(hours) + ":" + str(minutes) + " and will last for: " + str(duration) + " minutes.")
+print("Which means that this event should end at: "+ str(conversiontohours) + ":" + str(conversiontoremainder) + " military time")
+
+#figuring out information for time, took about 1hr30minutes, disregarding the hint of: using the % remainder operator that the website gave me
+# tried using for loops and ranges only to figure out that it's basically not necessary.
+# 1440 minutes = 24 hours.
+# try converting it into TOTAL minutes then convert it back into hours + minutes.
+
+#Time Conversion for all minutes and hours
+# hour2minute = hours * 60
+# totalminutes2hours = minutes + hour2minute
+# durationaddedonminutes = totalminutes2hours + duration # total minutes
+# conversiontotal = int(durationaddedonminutes / 60)
+# conversiontoremainder = durationaddedonminutes % 60
+# conversiontohours = int((durationaddedonminutes % 1440) / 60)
+
+# print(totalminutes2hours, "total amount of minutes after duration is", durationaddedonminutes)
+# print("conversion test", conversiontotal, conversiontoremainder, "conversion to hours", conversiontohours)
+# print("This event should be ending at: " + str(conversiontohours) + ":" + str(conversiontoremainder))
