@@ -119,3 +119,12 @@ print("Which means that this event should end at: "+ str(conversiontohours) + ":
 # print(totalminutes2hours, "total amount of minutes after duration is", durationaddedonminutes)
 # print("conversion test", conversiontotal, conversiontoremainder, "conversion to hours", conversiontohours)
 # print("This event should be ending at: " + str(conversiontohours) + ":" + str(conversiontoremainder))
+
+# x = input("enter a number:")
+# print(type(x)) -> THIS BASICALLY SHOWS WHAT TYPE AN OBJECT IS: 9 = int, "Hello World!" = str.
+# in this case, since int/float is not defined along with input(), the number here is immedietly converted to a string.
+
+# 0.5 + 3 // 3 + 8
+
+z = x
+print(z)
