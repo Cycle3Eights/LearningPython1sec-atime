@@ -169,11 +169,19 @@ else: #oh and btw, you could do elif thatdamnplantname != "spath" or "Spath" and
 # Writing a tax calculator, try to actually break this into chunks lol?
 # This will be using cisco's given data, but adding on for the if-else function.
 
-income = float(input("Enter the annual income: "))
+income = 85528 # float(input("Enter the annual income: "))
 
 if income < 85528:
     tax = income * 0.18 - 556.02
+    if tax <= 0:
+        tax = 0.0
+else:
+    if income > 85528:
+        surplus = income - 85528
+        tax = 14839.02 + surplus * 0.32
 
 tax = round(tax, 0) # if somehow income is above 855528 it'll not be stored in tax. the < operator takes it from
 # 85528 to negative infinity.
 print("The tax is:", tax, "thalers")
+
+### LAB -> if-elif-else statements.
