@@ -171,17 +171,77 @@ else: #oh and btw, you could do elif thatdamnplantname != "spath" or "Spath" and
 
 income = 85528 # float(input("Enter the annual income: "))
 
-if income < 85528:
-    tax = income * 0.18 - 556.02
-    if tax <= 0:
-        tax = 0.0
-else:
-    if income > 85528:
-        surplus = income - 85528
-        tax = 14839.02 + surplus * 0.32
+#if income < 85528:
+ #   tax = income * 0.18 - 556.02
+ #   if tax <= 0:
+#        tax = 0.0
+#else:
+#    if income > 85528:
+ #       surplus = income - 85528
+#        tax = 14839.02 + surplus * 0.32
 
-tax = round(tax, 0) # if somehow income is above 855528 it'll not be stored in tax. the < operator takes it from
+# tax = round(tax, 0) # if somehow income is above 855528 it'll not be stored in tax. the < operator takes it from
 # 85528 to negative infinity.
-print("The tax is:", tax, "thalers")
+print("The tax is:", "thalers")
 
-### LAB -> if-elif-else statements.
+### LAB -> if-elif-else statements. Leap year/ Common year
+
+year = 2000
+
+if year < 1582:
+	print("Not within the Gregorian calendar period")
+else:
+    if year > 1582:
+        if year != (year % 4): # -> figured out the asnwer, but, this is asking, if the year is not equal to
+            print("common year") # year remainder by 4. but i never actually put 0 there
+        elif year != (year % 100):
+            print("leap year")
+        elif year != (year % 400):
+            print("common year")
+        else:
+            print("leap year")
+
+### Section Quiz thoughts.
+print(3 % 4)
+
+x, y, z = 5, 10, 8
+x, y, z = z, y, x
+
+print(x > z)
+# small thoughts, new values for x,y,z are now there. but since 5,10,8, the values are now switched?
+# so x value = 5, now its 8, switched with z and it's value is now 5.
+# which explains on how x > z -> 8 > 5??
+print((y - 5 ) == x)
+# 10 - 5 -> 5 is equal to x. current x value is 8. which means this would be false as 5 != 8.
+
+threebees = 10
+
+if threebees == 10:
+    print(threebees == 10)
+if threebees > 5:
+    print(threebees < 5)
+
+if threebees < 10:
+    print(threebees < 10)
+else:
+    print("bruh")
+# right, i keep forgetting that the if functions are techniqually their own block.
+# so, if -> else, if three < 10:  would not print out the if statement, so it goes down to else, which would print out bruh.
+
+bees = 3
+beeswood = 3.0
+
+if bees == beeswood:
+    print("three")
+elif bees == beeswood:
+    print("both are not the same?") # the if itself gets printed, but for elif statement -> instead of comparing numbers
+else: # i think this is rather comparing the type, b/c 3 and 3.0 are not the same, one is an integer and one is a float
+    print("knowledge check") # so this is asking -> is an integer the same as a float and i'd say no.
+
+# else itself is never printed, why? b/c it is basically "otherwise", so if bees != beeswood then it would print i think.
+# else is also the last thing that is printed, so i think it would also be discarded unless everything else above it
+# cascade -> is not valid.
+if bees != beeswood:
+    print("threepeas")
+else:
+    print("knowledge check")
