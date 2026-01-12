@@ -3,16 +3,10 @@
 # im really thinking of that one doom mod that was related to house of leaves and stanley parable.
 
 import time
-starter_time = 6
 
-while starter_time != 0:
-    print(starter_time, "seconds left.")
-    starter_time -= 1
-    time.sleep(1)
-    if starter_time == 5:
-        start_of_adventure = input("The hallway opens and closes. Do you want to enter? Type Yes/No")
 
-timer_seconds_left = 5
+start_of_adventure = input("The hallway opens and closes. Do you want to enter? Type Yes/No")
+timer_seconds_left = 5 # Eventually try and figure out how to do a timer + input as soon as console opens. but for now,
 
 while timer_seconds_left != 0: # it'll wait until i put a response and then it'll start the countdown.
     print("You have", timer_seconds_left, "seconds left.")
@@ -31,8 +25,7 @@ else:
     if start_of_adventure != "Yes" or "No":
         print("this should break")
 
-if start_of_adventure == "Yes":
-    print("bruh")
-    print("d1")
-    print("d2")
+
+for Starter_Story in range(3):
+    print("blah blah", Starter_Story)
     time.sleep(1)
