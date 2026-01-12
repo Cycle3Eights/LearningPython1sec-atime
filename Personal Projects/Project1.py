@@ -28,4 +28,7 @@ else:
 
 for Starter_Story in range(3):
     print("blah blah", Starter_Story)
-    time.sleep(1)
+    time.sleep(1) # for future me, instead of adding time.sleep command AFTER EVERY SINGLE PRINT STATEMENT, i feel like
+                    # there should be a way to pull print statements somehow. b/c i know time.sleep works sure but i
+                    # like neatness and if i can somehow store it in a if statement or something i would but it
+                    # only works in a for/while loop. Which if there was a strat that i know of I'd use it.
