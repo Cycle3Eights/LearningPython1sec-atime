@@ -107,11 +107,11 @@ for i in range(0, 105, 25):
 import time #holy this might be the most important thing, cause all this time i was trying to figure out how the hell
 # i could shut down the damn file w/o having to press the button all the time and
 # as well as make the console have a dedicated countdown timer.
-for i in range(1, 6):
-    print(i, "Mississippi")
-    if i == 5:
-        print("Ready or not, here I come!")
-    time.sleep(1) # this basically makes the range go one at a time instead of instant.
+#for i in range(1, 6):
+ #   print(i, "Mississippi")
+ #   if i == 5:
+  #      print("Ready or not, here I come!")
+  #  time.sleep(1) # this basically makes the range go one at a time instead of instant.
 
 #### Break and Continue statements
 
@@ -120,6 +120,46 @@ for i in range(1, 6):
 
 ## Break -> Exits the loop immediately, and if there are other functions below, it'll keep going down.
 ## Continue -> Makes python act like it's the end of the body for that SPECIFIC number, starts next turn.
+
+### LAB -> Break Statement Stuck in a loop.
+
+#animal_spooky = print("chupacabra")
+
+#while animal_spooky != "chupacabra":
+  #  animal_spooky = input("try again, wrong animal")
+  #  if animal_spooky == "chupacabra":
+ #       break
+# if i wanted to, i could give hints + add a counter for this to make it so if idk counter >= 25, animal feature = hint.
+
+# if animal_spooky == "chupacabra":
+print("Hooray! you guessed chupacabra, the loop has now been broken.")
+
+### LAB -> The continue statement - the Ugly Vowel Eater.
+# im not going to lie, continue statement makes me a bit confused. the basic idea = skip button and move on, but when its in a
+# while loop that's where its like idk if its actually having an effect.
+
+## design a for lopp, if-elif-else + continue statement all together.
+
+#Vowel_Extraction = input("Please enter any word.")
+number = 0
+
+for number in range(1,13):
+#    Vowel_Extraction = Vowel_Extraction.upper()
+    if number == 5 or number == 6 or number == 7:
+        continue
+    else:
+        print(number, end=" ")
+
+Vowel_Extraction = "bees\n"
+
+for letter in Vowel_Extraction:
+    if letter == "e":
+        continue
+    else:
+        print(Vowel_Extraction,)
+
+
+
 
 
 
