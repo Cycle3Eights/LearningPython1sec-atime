@@ -186,6 +186,23 @@ for letter in Vowel_Extraction2:
     else:
         print("did something happen? lol")
 
+## while loop + else branch
+
+# while loops can also have else branches, like if/elif/else conditional statements.
+# same thing with if -> executed only once.
+# apprently rarely used.
+print("seperation?")
+
+numberah = 1
+while numberah < 5:
+    print(numberah, end=" ")
+    numberah += 1
+else:
+    print("reached the end of the loop, as i now equals to:", numberah)
+
+## for loop and else branch
+
+#
 
 
 
