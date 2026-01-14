@@ -143,20 +143,51 @@ print("Hooray! you guessed chupacabra, the loop has now been broken.")
 #Vowel_Extraction = input("Please enter any word.")
 number = 0
 
-for number in range(1,13):
-#    Vowel_Extraction = Vowel_Extraction.upper()
-    if number == 5 or number == 6 or number == 7:
+for number in range(1,13): # actual test b/c idk what im doing wrong, real test below
+    if number == 5 or number == 6 or number == 7: # if these conditions are satisfied -> SKIPPED. everything else printed.
         continue
     else:
         print(number, end=" ")
 
-Vowel_Extraction = "bees\n"
+# this was originally suppsoed to be an input statement but i got so confused that i decided to remove it.
+Vowel_Extraction = "\nbees"
 
-for letter in Vowel_Extraction:
-    if letter == "e":
+#for letter in Vowel_Extraction: # okay, i see what i did wrong, ive been doing Vowel Extraction -> WHOLE word and not
+#    Vowel_Extraction = Vowel_Extraction.upper() # the individual letters, oh my god AAGHRSURGSH.
+ #   if letter == "e" or letter == "a" or letter == "i" or letter == "o" or letter == "u":
+ #       continue
+#    elif letter == letter.upper():
+ #       continue
+  #  elif letter != "e" or letter != "a" or letter != "i" or letter != "o" or letter != "u":
+   #     letter = letter.upper()
+#        print(letter, end=" ")
+#    else:
+#        print("Vowel lmao", end=" ")
+
+### LAB -> Pretty Vowel Eater!
+# Slightly same thing as before, but a new string is added -> word_without_Vowels. Any result w/o
+# vowels will now be printed and assigned?
+
+print("seperation")
+word_without_Vowels = ""
+Vowel_Extraction2 = "Gregory"
+
+# mm, the empty variable is now tripping me out for some reason?
+for letter in Vowel_Extraction2:
+    word_without_Vowels = letter # bro i keep putting these two lines inside the if/elif/else statements, they need to be outside
+    word_without_Vowels = word_without_Vowels.upper() # of the statements ohh fkafiwaguhgfdbafh
+    if letter == "A" or letter == "E" or letter == "I" or letter == "O" or letter == "U":
         continue
+    elif letter == "a" or letter == "e" or letter == "i" or letter == "o" or letter == "u":
+        continue
+    elif letter != "a" or letter != "e" or letter != "i" or letter != "o" or letter != "u":
+        print(word_without_Vowels, end="")
+        time.sleep(0.5)
     else:
-        print(Vowel_Extraction,)
+        print("did something happen? lol")
+
+
+
 
 
 
