@@ -182,7 +182,7 @@ for letter in Vowel_Extraction2:
         continue
     elif letter != "a" or letter != "e" or letter != "i" or letter != "o" or letter != "u":
         print(word_without_Vowels, end="")
-        time.sleep(0.5)
+        time.sleep(0.1)
     else:
         print("did something happen? lol")
 
@@ -202,7 +202,25 @@ else:
 
 ## for loop and else branch
 
-#
+# apprently one thing about this -> instead of like while + else -> printing last number on else statement, it
+# actually just completely skips it? or rather it ignores it. -> my brain be leaking bruhj
+
+# so -> for i < 5 -> goes from 0 -> 4, then only does print(" numbner", 4) instead of 5.
+# just like the if statments, usually else is executed once.
+
+### LAB Essentials of the while loop
+# blocks being built by a son and a father, pyramid shape.
+# lower layer -> one block more than its layer above.
+blocks = int(input("Enter the number of blocks: "))
+
+## While loop
+while blocks > 0:
+    blocks -= 1
+    height = blocks
+
+print("The height of the pyramid:", height)
+
+
 
 
 
