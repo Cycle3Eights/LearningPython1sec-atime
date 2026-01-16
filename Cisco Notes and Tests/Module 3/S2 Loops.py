@@ -211,12 +211,22 @@ else:
 ### LAB Essentials of the while loop
 # blocks being built by a son and a father, pyramid shape.
 # lower layer -> one block more than its layer above.
-blocks = int(input("Enter the number of blocks: "))
+blocks = int(input("Enter blocks for construction"))
 
+# goal -> input 6 get height = 3.
 ## While loop
-while blocks > 0:
+while blocks != 0 :
     blocks -= 1
     height = blocks
+    if blocks == 5 or blocks == 3:
+        blocks = 5 + 3
+        print("test value", blocks)
+    else:
+        print("mind bruh")
+        break
+
+# typing down my ideas b4 it leaves my brain -> n + 1 increments until it gets to the goal?
+# maybe do a for x in range statements until it hits the goal too?
 
 print("The height of the pyramid:", height)
 
