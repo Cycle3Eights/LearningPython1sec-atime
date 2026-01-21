@@ -1,7 +1,6 @@
 ## 1/11/26 oh my god looping!! hooray its roller coaster time!!
 # main methods of loops and stuff that will be used, infinite loops (enter/exit), skip loops, and most important
 # while and for loops :DD
-import itertools
 
 ### Looping w/ [while]
 
@@ -212,25 +211,21 @@ else:
 ### LAB Essentials of the while loop
 # blocks being built by a son and a father, pyramid shape.
 # lower layer -> one block more than its layer above.
+blocks = int(input("Enter blocks for construction"))
+height = 0
 
-
-blocks = int(input("Enter blocks for construction:"))
-set_target = ()
-set_targetnum = ()
-
-while set_target != blocks:
+# goal -> input 6 get height = 3.
+## While loop
+while blocks > height :
     blocks -= 1
-    set_targetnum = set_targetnum + (blocks,)
-    print(set_targetnum)
-    if blocks == 0:
-         break
+    if blocks % 2 != 0:
+        height += 1
+    else:
+        continue
 
+#actually eureka i think im close.
 
-
-# typing down my ideas b4 it leaves my brain -> n + 1 increments until it gets to the goal?
-# maybe do a for x in range statements until it hits the goal too?
-
-print("The height of the pyramid:")
+print("The height of the pyramid:", height)
 
 
 
