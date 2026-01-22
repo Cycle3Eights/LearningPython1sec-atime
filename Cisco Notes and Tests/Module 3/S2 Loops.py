@@ -227,6 +227,8 @@ while blocks > height :
         level_1 += 1
 
 # first time ever, im ngl had to go look at a tutorial.. aghh man thats kinda hard to find a solution.
+
+# also aint no way -> two lines height += 1 and blocks -= height, i overthought about it ahhh.
 print("The height of the pyramid:", height)
 
 
