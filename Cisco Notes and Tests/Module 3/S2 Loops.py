@@ -213,18 +213,20 @@ else:
 # lower layer -> one block more than its layer above.
 blocks = int(input("Enter blocks for construction"))
 height = 0
+blocks_currentlevel = 0
+level_1 = 1
 
 # goal -> input 6 get height = 3.
 ## While loop
 while blocks > height :
-    blocks -= 1
-    if blocks % 2 != 0:
-        height += 1
+    blocks_currentlevel += level_1
+    if blocks_currentlevel > blocks:
+        break
     else:
-        continue
+        height += 1
+        level_1 += 1
 
-#actually eureka i think im close.
-
+# first time ever, im ngl had to go look at a tutorial.. aghh man thats kinda hard to find a solution.
 print("The height of the pyramid:", height)
 
 
