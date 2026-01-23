@@ -211,7 +211,7 @@ else:
 ### LAB Essentials of the while loop
 # blocks being built by a son and a father, pyramid shape.
 # lower layer -> one block more than its layer above.
-blocks = int(input("Enter blocks for construction"))
+blocks = 6
 height = 0
 blocks_currentlevel = 0
 level_1 = 1
@@ -230,6 +230,21 @@ while blocks > height :
 
 # also aint no way -> two lines height += 1 and blocks -= height, i overthought about it ahhh.
 print("The height of the pyramid:", height)
+
+### LAB -> Collatz hypothesis.
+startinput = int(input("Enter a number."))
+c0 = 1
+
+for c0 in range(startinput):
+    while c0 > startinput: # replace this later.
+        if startinput % 2 == 2:
+            c0 = c0 / 2
+        elif startinput % 2 == 1:
+            c0 = 3 * c0 + 1
+        elif c0 != 1:
+            print("test?")
+        print(c0, end=" ")
+        time.sleep(1)
 
 
 
