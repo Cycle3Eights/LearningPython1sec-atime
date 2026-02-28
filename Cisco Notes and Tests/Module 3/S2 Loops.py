@@ -231,22 +231,23 @@ while blocks > height :
 # also aint no way -> two lines height += 1 and blocks -= height, i overthought about it ahhh.
 print("The height of the pyramid:", height)
 
-### LAB -> Collatz hypothesis.
-startinput = int(input("Enter a number."))
-c0 = 1
+### LAB -> Collatz hypothesis. 2/28, used a tutorial here. im ngl brain cooked.
+c0 = int(input("Starting Number here, positive greater than 0."))
+steps = 0
 
-for c0 in range(startinput):
-    while c0 > startinput: # replace this later.
-        if startinput % 2 == 2:
-            c0 = c0 / 2
-        elif startinput % 2 == 1:
-            c0 = 3 * c0 + 1
-        elif c0 != 1:
-            print("test?")
-        print(c0, end=" ")
-        time.sleep(1)
+while c0 != 1:
+    if c0 < 1:
+        print("Has to be greater than 0. Please try again")
+        break
+    elif c0 % 2 == 0: # dividing and checking if its even -> no remainder
+        c0 //= 2
+    else: # if it's somehow not even, then it goes down to here, which has a remainder.
+        c0 = 3 * c0 + 1
+    print(c0)
 
+    steps += 1
 
+print("The total number of steps used was: ", steps)
 
 
 
